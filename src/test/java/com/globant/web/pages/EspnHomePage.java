@@ -1,8 +1,7 @@
 package com.globant.web.pages;
 
-import org.openqa.selenium.By;
+
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -17,9 +16,7 @@ public class 	EspnHomePage extends BasePage{
 
 	@FindBy(css="#global-user-trigger")
 	private static WebElement user;
-	
-//li.user.hover:nth-child(2) li:nth-child(5) 
-	
+		
 	@FindBy(css="#global-header ul.account-management a[tref$='login']")
 	private static WebElement logIn;
 	
@@ -62,14 +59,15 @@ public class 	EspnHomePage extends BasePage{
 	@FindBy(css="#global-viewport > .global-user")
 	private static WebElement container;	
 	
-	
+	@FindBy(id="disneyid-iframe")
+	private static WebElement iframes;
 	
  	
 	/**
 	 * Open Page
 	 */
-	public EspnHomePage(WebDriver Driver, String url) {
-		super(Driver);		
+	public EspnHomePage(WebDriver driver, String url) {
+		super(driver);		
 		driver.get(url);
 		driver.manage().window().maximize();
 	}
@@ -81,13 +79,13 @@ public class 	EspnHomePage extends BasePage{
 	 */ 
 	public void createCount(String fname, String lname, String mail, String pwd) {
 		log.info("Choose iFrame");
-		profileClick(user, logIn);
+		profileClick(logIn);
 		driver.switchTo().frame("disneyid-iframe");
-		getWait().until(ExpectedConditions.elementToBeClickable(signUp));
+		waitElementClickable(signUp);
 		log.info("Select SingUp Button");
 		signUp.click();
 		log.info("Insert Data");
-		getWait().until(ExpectedConditions.elementToBeClickable(firstName));
+		waitElementClickable(firstName);
 		firstName.sendKeys(fname);
 		lastName.sendKeys(lname);
 		email.sendKeys(mail);
@@ -95,56 +93,69 @@ public class 	EspnHomePage extends BasePage{
 		log.info("Send Form");
 		signUpForm.click();
 		driver.switchTo().defaultContent();
-		waitSec(5000);
-		profileClick(user,logOut);
+		getWait().until(ExpectedConditions.invisibilityOf(iframes));
+		profileClick(logOut);
 	}
 	
 	/**
-	 * Delete existent count
-	 * @return 
+	 * Delete existent count 
 	 */
-
-
-//	public CancelCountPage cancelCount(String uname, String pwd) {
-//		logIn(uname, pwd);
-//		return new CancelCountPage(getDriver());
-//	}
-
 	public void cancelCount(String uname, String pwd) {
-		profileClick(user,logIn);
+		profileClick(logIn);
 		log.info("Choose iFrame LogIn");
 		driver.switchTo().frame("disneyid-iframe");
-		logInClick(uname, pwd, email, password, buttonLogIn);
+		logInClick(uname, pwd);
 		driver.switchTo().defaultContent();
 		log.info("Choose Cancel Count");
-		waitSec(5000);
-		profileClick(user,espnProfile);
+		getWait().until(ExpectedConditions.invisibilityOf(iframes));
+		fwait(user);
+		profileClick(espnProfile);
 		log.info("Go to Profile");
-		waitSec(10000);
 		driver.switchTo().frame("disneyid-iframe");
 		log.info("Delete count");
+		fwait(email);
 		email.sendKeys("prueba123");
 		JavascriptExecutor js = (JavascriptExecutor) getDriver();
-		js.executeScript("arguments[0].scrollIntoView();", deleteButton);
-		//js.executeScript("window.scrollBy(0,2000)");
-		
+		js.executeScript("arguments[0].scrollIntoView();", deleteButton);		
 		deleteButton.click();
 		confirmButton.click();
 	}
 
 	/**
 	 * Login to existent count
-	 * @return 
 	 */
 	public void logIn(String uname, String pwd) {
-		profileClick(user,logIn);
+		profileClick(logIn);
 		log.info("Choose iFrame LogIn");
 		driver.switchTo().frame("disneyid-iframe");
-		logInClick(uname, pwd, email, password, buttonLogIn);
+		logInClick(uname, pwd);
 		driver.switchTo().defaultContent();
-		waitSec(5000);
-		profileClick(user,logOut);
+		getWait().until(ExpectedConditions.invisibilityOf(iframes));
+		fwait(user);
+		profileClick(logOut);
 	}
+	
+	public static void profileClick(WebElement option) {
+		waitElementVisibility(user);
+		waitElementClickable(user);
+		user.click();
+		waitElementClickable(option);
+	 	option.click();
+	}
+	
+	/**
+	 * Login in the page.
+	 * @param element : user name and password
+	 */
+	public void logInClick(String uname, String pwd) {
+		getWait().until(ExpectedConditions.visibilityOf(email));
+		email.sendKeys(uname);
+		password.sendKeys(pwd);	
+		getWait().until(ExpectedConditions.visibilityOf(buttonLogIn));
+		waitElementClickable(buttonLogIn);
+		buttonLogIn.click();
+	}	
+
 	
 
 	

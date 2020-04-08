@@ -4,7 +4,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.globant.web.data.Data;
-import com.globant.web.pages.CancelCountPage;
 import com.globant.web.pages.EspnHomePage;
 
 public class TestCancelCount extends EspnTest {
@@ -17,8 +16,6 @@ public class TestCancelCount extends EspnTest {
 		  System.out.print("CancelCount");
 		  EspnHomePage home=getEspnHome();
 		  home.cancelCount(uname, pwd);
-		  //CancelCountPage cancelCount = home.cancelCount(uname, pwd);
-		  //cancelCount.cancelCount();
 		  //Assert.assertNotEquals(home.verYouTube(),"0", "Correcto");
 	  }
 	 

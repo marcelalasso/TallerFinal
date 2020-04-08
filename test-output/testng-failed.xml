@@ -30,4 +30,16 @@
       </class> <!-- com.globant.web.tests.TestLogin -->
     </classes>
   </test> <!-- Espn Test LogIn(failed) -->
+  <test thread-count="5" name="Espn Test Cancel Count(failed)">
+    <classes>
+      <class name="com.globant.web.tests.TestCancelCount">
+        <methods>
+          <include name="afterTest"/>
+          <include name="BeforeSuite"/>
+          <include name="testCancelCount" invocation-numbers="0"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.globant.web.tests.TestCancelCount -->
+    </classes>
+  </test> <!-- Espn Test Cancel Count(failed) -->
 </suite> <!-- Failed suite [My test suite] -->

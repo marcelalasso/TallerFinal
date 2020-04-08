@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="My test suite" duration-ms="129765" started-at="2020-04-07T14:47:06Z" finished-at="2020-04-07T14:49:16Z">
+  <suite name="My test suite" duration-ms="87258" started-at="2020-04-08T00:04:23Z" finished-at="2020-04-08T00:05:50Z">
     <groups>
     </groups>
-    <test name="Espn Test Create Count" duration-ms="29248" started-at="2020-04-07T14:47:06Z" finished-at="2020-04-07T14:47:36Z">
+    <test name="Espn Test Create Count" duration-ms="35306" started-at="2020-04-08T00:04:23Z" finished-at="2020-04-08T00:04:58Z">
       <class name="com.globant.web.tests.TestCreateCount">
-        <test-method status="PASS" signature="BeforeSuite(java.lang.String, java.lang.String)[pri:0, instance:com.globant.web.tests.TestCreateCount@28d25987]" name="BeforeSuite" is-config="true" duration-ms="15907" started-at="2020-04-07T14:47:06Z" finished-at="2020-04-07T14:47:22Z">
+        <test-method status="PASS" signature="BeforeSuite(java.lang.String, java.lang.String)[pri:0, instance:com.globant.web.tests.TestCreateCount@28d25987]" name="BeforeSuite" is-config="true" duration-ms="16209" started-at="2020-04-08T00:04:23Z" finished-at="2020-04-08T00:04:39Z">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeSuite -->
-        <test-method status="PASS" signature="createCount(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.globant.web.tests.TestCreateCount@28d25987]" name="createCount" duration-ms="13300" started-at="2020-04-07T14:47:22Z" description="Data Provider New Count" data-provider="newcount" finished-at="2020-04-07T14:47:36Z">
+        <test-method status="PASS" signature="createCount(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.globant.web.tests.TestCreateCount@28d25987]" name="createCount" duration-ms="19068" started-at="2020-04-08T00:04:39Z" description="Data Provider New Count" data-provider="newcount" finished-at="2020-04-08T00:04:58Z">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[mail17@prueba.com]]>
+                <![CDATA[mail21@prueba.com]]>
               </value>
             </param>
             <param index="3">
@@ -49,19 +49,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createCount -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.globant.web.tests.TestCreateCount@28d25987]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-04-07T14:47:36Z" finished-at="2020-04-07T14:47:36Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.globant.web.tests.TestCreateCount@28d25987]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-04-08T00:04:58Z" finished-at="2020-04-08T00:04:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.globant.web.tests.TestCreateCount@28d25987]" name="afterTest" is-config="true" duration-ms="1" started-at="2020-04-07T14:47:36Z" finished-at="2020-04-07T14:47:36Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.globant.web.tests.TestCreateCount@28d25987]" name="afterTest" is-config="true" duration-ms="1" started-at="2020-04-08T00:04:58Z" finished-at="2020-04-08T00:04:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- com.globant.web.tests.TestCreateCount -->
     </test> <!-- Espn Test Create Count -->
-    <test name="Espn Test LogIn" duration-ms="44516" started-at="2020-04-07T14:47:36Z" finished-at="2020-04-07T14:48:20Z">
+    <test name="Espn Test LogIn" duration-ms="24023" started-at="2020-04-08T00:04:58Z" finished-at="2020-04-08T00:05:22Z">
       <class name="com.globant.web.tests.TestLogin">
-        <test-method status="PASS" signature="BeforeSuite(java.lang.String, java.lang.String)[pri:0, instance:com.globant.web.tests.TestLogin@548e7350]" name="BeforeSuite" is-config="true" duration-ms="25318" started-at="2020-04-07T14:47:36Z" finished-at="2020-04-07T14:48:01Z">
+        <test-method status="PASS" signature="BeforeSuite(java.lang.String, java.lang.String)[pri:0, instance:com.globant.web.tests.TestLogin@548e7350]" name="BeforeSuite" is-config="true" duration-ms="15360" started-at="2020-04-08T00:04:58Z" finished-at="2020-04-08T00:05:13Z">
           <params>
             <param index="0">
               <value>
@@ -77,11 +77,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeSuite -->
-        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:com.globant.web.tests.TestLogin@548e7350]" name="testLogin" duration-ms="19193" started-at="2020-04-07T14:48:01Z" description="Data Provider Login" data-provider="count" finished-at="2020-04-07T14:48:20Z">
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:com.globant.web.tests.TestLogin@548e7350]" name="testLogin" duration-ms="8659" started-at="2020-04-08T00:05:13Z" description="Data Provider Login" data-provider="count" finished-at="2020-04-08T00:05:22Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[email9@prueba.com]]>
+                <![CDATA[email10@prueba.com]]>
               </value>
             </param>
             <param index="1">
@@ -93,19 +93,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.globant.web.tests.TestLogin@548e7350]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-04-07T14:48:20Z" finished-at="2020-04-07T14:48:20Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.globant.web.tests.TestLogin@548e7350]" name="afterClass" is-config="true" duration-ms="1" started-at="2020-04-08T00:05:22Z" finished-at="2020-04-08T00:05:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.globant.web.tests.TestLogin@548e7350]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-04-07T14:48:20Z" finished-at="2020-04-07T14:48:20Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.globant.web.tests.TestLogin@548e7350]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-04-08T00:05:22Z" finished-at="2020-04-08T00:05:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- com.globant.web.tests.TestLogin -->
     </test> <!-- Espn Test LogIn -->
-    <test name="Espn Test Cancel Count" duration-ms="55954" started-at="2020-04-07T14:48:20Z" finished-at="2020-04-07T14:49:16Z">
+    <test name="Espn Test Cancel Count" duration-ms="27902" started-at="2020-04-08T00:05:22Z" finished-at="2020-04-08T00:05:50Z">
       <class name="com.globant.web.tests.TestCancelCount">
-        <test-method status="PASS" signature="BeforeSuite(java.lang.String, java.lang.String)[pri:0, instance:com.globant.web.tests.TestCancelCount@4dfa3a9d]" name="BeforeSuite" is-config="true" duration-ms="22601" started-at="2020-04-07T14:48:20Z" finished-at="2020-04-07T14:48:43Z">
+        <test-method status="PASS" signature="BeforeSuite(java.lang.String, java.lang.String)[pri:0, instance:com.globant.web.tests.TestCancelCount@4dfa3a9d]" name="BeforeSuite" is-config="true" duration-ms="19076" started-at="2020-04-08T00:05:22Z" finished-at="2020-04-08T00:05:41Z">
           <params>
             <param index="0">
               <value>
@@ -121,11 +121,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeSuite -->
-        <test-method status="PASS" signature="testCancelCount(java.lang.String, java.lang.String)[pri:0, instance:com.globant.web.tests.TestCancelCount@4dfa3a9d]" name="testCancelCount" duration-ms="33349" started-at="2020-04-07T14:48:43Z" description="Data Provider Login" data-provider="count" finished-at="2020-04-07T14:49:16Z">
+        <test-method status="PASS" signature="testCancelCount(java.lang.String, java.lang.String)[pri:0, instance:com.globant.web.tests.TestCancelCount@4dfa3a9d]" name="testCancelCount" duration-ms="8824" started-at="2020-04-08T00:05:41Z" description="Data Provider Login" data-provider="count" finished-at="2020-04-08T00:05:50Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[email9@prueba.com]]>
+                <![CDATA[email10@prueba.com]]>
               </value>
             </param>
             <param index="1">
@@ -137,11 +137,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCancelCount -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.globant.web.tests.TestCancelCount@4dfa3a9d]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-04-07T14:49:16Z" finished-at="2020-04-07T14:49:16Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.globant.web.tests.TestCancelCount@4dfa3a9d]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-04-08T00:05:50Z" finished-at="2020-04-08T00:05:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.globant.web.tests.TestCancelCount@4dfa3a9d]" name="afterTest" is-config="true" duration-ms="1" started-at="2020-04-07T14:49:16Z" finished-at="2020-04-07T14:49:16Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.globant.web.tests.TestCancelCount@4dfa3a9d]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-04-08T00:05:50Z" finished-at="2020-04-08T00:05:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

@@ -1,11 +1,19 @@
 package com.globant.web.pages;
 
+import java.time.Duration;
+import java.util.NoSuchElementException;
+import java.util.concurrent.TimeoutException;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.google.common.base.Function;
 
 /**
  * Parent of the other classes of pages.
@@ -60,31 +68,13 @@ public class BasePage {
 		getWait().until(ExpectedConditions.visibilityOf(element));
 	}
 	
-
+	public static void waitElementClickable(WebElement element) {
+		getWait().until(ExpectedConditions.elementToBeClickable(element));
+	}
 	/**
 	 * Click in profile button and next button.
 	 * @param element : WebElement
 	 */
-	public static void profileClick(WebElement user, WebElement option) {
-		waitElementVisibility(user);
-		getWait().until(ExpectedConditions.elementToBeClickable(user));
-		user.click();
-		getWait().until(ExpectedConditions.elementToBeClickable(option));
-	 	option.click();
-	}
-	
-	/**
-	 * Login in the page.
-	 * @param element : WebElement, user name and password
-	 */
-	public void logInClick(String uname, String pwd, WebElement email, WebElement password, WebElement buttonLogIn) {
-		getWait().until(ExpectedConditions.visibilityOf(email));
-		email.sendKeys(uname);
-		password.sendKeys(pwd);	
-		getWait().until(ExpectedConditions.visibilityOf(buttonLogIn));
-		getWait().until(ExpectedConditions.elementToBeClickable(buttonLogIn));
-		buttonLogIn.click();
-	}	
 		
 	public void waitSec(int time) {
 	 try {
@@ -93,5 +83,25 @@ public class BasePage {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+	
+	/**
+	 * Wait for element to appear.
+	 *
+	 * @param driver the driver
+	 * @param element the element
+	 */
+	public void fwait(WebElement elements) {
+		try {
+			FluentWait<WebDriver> wait2 = new FluentWait<WebDriver>(driver);
+			  wait2.withTimeout(Duration.ofSeconds(90))
+			  .pollingEvery(Duration.ofSeconds(30))
+			  .ignoring(NoSuchElementException.class);
+			
+			wait2.until(ExpectedConditions.elementToBeClickable(elements));
+		} catch (Exception e) {
+			log.info( "Exception occured" + e.getStackTrace());
+		}
+
 	}
 }
