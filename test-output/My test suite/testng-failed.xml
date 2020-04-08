@@ -6,30 +6,6 @@
   <listeners>
     <listener class-name="com.globant.web.listener.listeners"/>
   </listeners>
-  <test thread-count="5" name="Espn Test Create Count(failed)">
-    <classes>
-      <class name="com.globant.web.tests.TestCreateCount">
-        <methods>
-          <include name="afterTest"/>
-          <include name="BeforeSuite"/>
-          <include name="createCount" invocation-numbers="0"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.globant.web.tests.TestCreateCount -->
-    </classes>
-  </test> <!-- Espn Test Create Count(failed) -->
-  <test thread-count="5" name="Espn Test LogIn(failed)">
-    <classes>
-      <class name="com.globant.web.tests.TestLogin">
-        <methods>
-          <include name="afterTest"/>
-          <include name="BeforeSuite"/>
-          <include name="testLogin" invocation-numbers="0"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.globant.web.tests.TestLogin -->
-    </classes>
-  </test> <!-- Espn Test LogIn(failed) -->
   <test thread-count="5" name="Espn Test Cancel Count(failed)">
     <classes>
       <class name="com.globant.web.tests.TestCancelCount">

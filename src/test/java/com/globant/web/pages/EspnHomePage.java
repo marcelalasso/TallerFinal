@@ -108,12 +108,13 @@ public class 	EspnHomePage extends BasePage{
 		driver.switchTo().defaultContent();
 		log.info("Choose Cancel Count");
 		getWait().until(ExpectedConditions.invisibilityOf(iframes));
-		fwait(user);
+		waitElementClickable(user);
 		profileClick(espnProfile);
 		log.info("Go to Profile");
-		driver.switchTo().frame("disneyid-iframe");
 		log.info("Delete count");
-		fwait(email);
+		getWait().until(ExpectedConditions.visibilityOf(iframes));
+		driver.switchTo().frame("disneyid-iframe");
+		waitElementClickable(email);
 		email.sendKeys("prueba123");
 		JavascriptExecutor js = (JavascriptExecutor) getDriver();
 		js.executeScript("arguments[0].scrollIntoView();", deleteButton);		
