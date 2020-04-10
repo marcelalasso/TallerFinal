@@ -91,6 +91,7 @@ public class 	EspnHomePage extends BasePage{
 	 * Create New Count
 	 */ 
 	public void createCount(String fname, String lname, String mail, String pwd) {
+		driver.manage().deleteAllCookies();
 		log.info("Choose iFrame");
 		profileClick(optlogin);
 		driver.switchTo().frame("disneyid-iframe");
@@ -112,6 +113,7 @@ public class 	EspnHomePage extends BasePage{
 	 * Delete existent count 
 	 */
 	public void cancelCount(String uname, String pwd) {
+		driver.manage().deleteAllCookies();
 		driver.switchTo().defaultContent();
 		waitElementVisibility(user);
 		profileClick(optlogin);
@@ -140,6 +142,7 @@ public class 	EspnHomePage extends BasePage{
 	 * Login to existent count
 	 */
 	public void logIn(String uname, String pwd) {
+		driver.manage().deleteAllCookies();
 		profileClick(optlogin);
 		log.info("Choose iFrame LogIn");
 		driver.switchTo().frame("disneyid-iframe");
@@ -154,7 +157,6 @@ public class 	EspnHomePage extends BasePage{
 	 * Click on Profile and next WebElement 
 	 */
 	public void profileClick(WebElement options) {
-		driver.manage().deleteAllCookies();
 		scrollPage(findButton);
 		waitElementVisibility(user);
 		waitElementVisibility(user);

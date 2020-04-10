@@ -6,16 +6,16 @@
   <listeners>
     <listener class-name="com.globant.web.listener.listeners"/>
   </listeners>
-  <test thread-count="5" name="Espn Test LogIn(failed)">
+  <test thread-count="5" name="Espn Test Cancel Count(failed)">
     <classes>
-      <class name="com.globant.web.tests.TestLogin">
+      <class name="com.globant.web.tests.TestCancelCount">
         <methods>
           <include name="afterTest"/>
-          <include name="BeforeSuite"/>
-          <include name="testLogin" invocation-numbers="0"/>
+          <include name="BeforeTest"/>
+          <include name="testCancelCount" invocation-numbers="0"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.globant.web.tests.TestLogin -->
+      </class> <!-- com.globant.web.tests.TestCancelCount -->
     </classes>
-  </test> <!-- Espn Test LogIn(failed) -->
+  </test> <!-- Espn Test Cancel Count(failed) -->
 </suite> <!-- Failed suite [My test suite] -->

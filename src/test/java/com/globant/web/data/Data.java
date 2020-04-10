@@ -7,7 +7,7 @@ import org.testng.annotations.DataProvider;
 public class Data {
     @DataProvider(name = "count")
     public static Object[][] inputData() {
-        return new Object[][] {{"prueba001o@test.com", "prueba1234"}};
+        return new Object[][] {{"prueba001r@test.com", "prueba1234"}};
     }
 
     @DataProvider(name = "newcount")
@@ -19,7 +19,7 @@ public class Data {
     
     @DataProvider(name = "deletecount")
     public static Object[][] inputDataD() {
-        return new Object[][] {{"prueba001o@test.com", "prueba1234"}};
+        return new Object[][] {{"prueba001r@test.com", "prueba1234"}};
     }
     
 	public int generateRandomInt(){

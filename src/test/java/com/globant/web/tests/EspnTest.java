@@ -24,7 +24,7 @@ public class EspnTest {
   
 	@BeforeTest(alwaysRun=true)
 	@Parameters({"browser", "url"})
-	public void BeforeSuite(String browser, String url) {
+	public void BeforeTest(String browser, String url) {
 		driver= new Driver(browser);
 		espnHome= new EspnHomePage(driver.getDriver(), url);
 	 }

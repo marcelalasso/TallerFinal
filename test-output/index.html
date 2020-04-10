@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-My_test_suite">
-              <span class="suite-name border-failed">My test suite</span>
+              <span class="suite-name border-passed">My test suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-My_test_suite" class="hide-methods failed suite-My_test_suite"> (hide)</a> <!-- hide-methods failed suite-My_test_suite -->
-                      <a href="#" panel-name="suite-My_test_suite" class="show-methods failed suite-My_test_suite"> (show)</a> <!-- show-methods failed suite-My_test_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-My_test_suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-My_test_suite" title="com.globant.web.tests.TestLogin" hash-for-method="testLogin(prueba001o@test.com, prueba1234)">testLogin(prueba001o@test.com, prueba1234)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-My_test_suite -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -116,12 +102,17 @@
                     <div class="method-list-content passed suite-My_test_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-My_test_suite" title="com.globant.web.tests.TestCreateCount" hash-for-method="createCount(Ana, Ruiz, mail264@prueba.com, prueba1234)">createCount(Ana, Ruiz, mail264@prueba.com, prueba1234)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-My_test_suite" title="com.globant.web.tests.TestCreateCount" hash-for-method="createCount(Ana, Ruiz, mail424@prueba.com, prueba1234)">createCount(Ana, Ruiz, mail424@prueba.com, prueba1234)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-My_test_suite" title="com.globant.web.tests.TestCancelCount" hash-for-method="testCancelCount(prueba001o@test.com, prueba1234)">testCancelCount(prueba001o@test.com, prueba1234)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-My_test_suite" title="com.globant.web.tests.TestCancelCount" hash-for-method="testCancelCount(prueba001r@test.com, prueba1234)">testCancelCount(prueba001r@test.com, prueba1234)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_test_suite" title="com.globant.web.tests.TestLogin" hash-for-method="testLogin(prueba001r@test.com, prueba1234)">testLogin(prueba001r@test.com, prueba1234)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-My_test_suite -->
@@ -136,50 +127,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-My_test_suite" class="panel My_test_suite">
-          <div class="suite-My_test_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.globant.web.tests.TestLogin</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testLogin(prueba001o@test.com, prueba1234)">
-                  </a> <!-- testLogin(prueba001o@test.com, prueba1234) -->
-                  <span class="method-name">testLogin</span>
-                  <span class="parameters">(prueba001o@test.com, prueba1234)</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#global-header .small&quot;}
-  (Session info: chrome=80.0.3987.163)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;CO-IT00385&apos;, ip: &apos;192.168.0.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\EDITH~1.LAS\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:61402}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 8a2de9fcb83718c297d14edc25cc681d
-*** Element info: {Using=css selector, value=#global-header .small}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:416)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
-	at com.globant.web.pages.EspnHomePage.verLogout(EspnHomePage.java:205)
-	at com.globant.web.tests.TestLogin.testLogin(TestLogin.java:19)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Data Provider Login)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-My_test_suite-class-failed -->
           <div class="suite-My_test_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -188,10 +135,10 @@ Session ID: 8a2de9fcb83718c297d14edc25cc681d
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="createCount(Ana, Ruiz, mail264@prueba.com, prueba1234)">
-                  </a> <!-- createCount(Ana, Ruiz, mail264@prueba.com, prueba1234) -->
+                  <a name="createCount(Ana, Ruiz, mail424@prueba.com, prueba1234)">
+                  </a> <!-- createCount(Ana, Ruiz, mail424@prueba.com, prueba1234) -->
                   <span class="method-name">createCount</span>
-                  <span class="parameters">(Ana, Ruiz, mail264@prueba.com, prueba1234)</span>
+                  <span class="parameters">(Ana, Ruiz, mail424@prueba.com, prueba1234)</span>
                   <em>
 (Data Provider New Count)                  </em>
                 </div> <!-- method-content -->
@@ -206,10 +153,28 @@ Session ID: 8a2de9fcb83718c297d14edc25cc681d
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testCancelCount(prueba001o@test.com, prueba1234)">
-                  </a> <!-- testCancelCount(prueba001o@test.com, prueba1234) -->
+                  <a name="testCancelCount(prueba001r@test.com, prueba1234)">
+                  </a> <!-- testCancelCount(prueba001r@test.com, prueba1234) -->
                   <span class="method-name">testCancelCount</span>
-                  <span class="parameters">(prueba001o@test.com, prueba1234)</span>
+                  <span class="parameters">(prueba001r@test.com, prueba1234)</span>
+                  <em>
+(Data Provider Login)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-My_test_suite-class-passed -->
+          <div class="suite-My_test_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.globant.web.tests.TestLogin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(prueba001r@test.com, prueba1234)">
+                  </a> <!-- testLogin(prueba001r@test.com, prueba1234) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(prueba001r@test.com, prueba1234)</span>
                   <em>
 (Data Provider Login)                  </em>
                 </div> <!-- method-content -->
@@ -301,20 +266,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testCancelCount')
 data.setCell(0, 2, 'com.globant.web.tests.TestCancelCount')
-data.setCell(0, 3, 48726);
+data.setCell(0, 3, 21258);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'createCount')
 data.setCell(1, 2, 'com.globant.web.tests.TestCreateCount')
-data.setCell(1, 3, 14571);
+data.setCell(1, 3, 12357);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testLogin')
 data.setCell(2, 2, 'com.globant.web.tests.TestLogin')
-data.setCell(2, 3, 11916);
+data.setCell(2, 3, 8713);
 window.suiteTableData['My_test_suite']= { tableData: data, tableDiv: 'times-div-My_test_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 42 seconds</span>
               <div id="times-div-My_test_suite">
               </div> <!-- times-div-My_test_suite -->
             </div> <!-- times-div -->
@@ -342,60 +307,58 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.globant.web.tests.TestCreateCount</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">BeforeSuite(chrome, https://www.espn.com/?src=com)</span>
+                <span class="method-name">BeforeTest(chrome, https://www.espn.com/?src=com)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">createCount(Ana, Ruiz, mail264@prueba.com, prueba1234)</span>
-                <span class="method-start">14451 ms</span>
+                <span class="method-name">createCount(Ana, Ruiz, mail424@prueba.com, prueba1234)</span>
+                <span class="method-start">13868 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">29024 ms</span>
+                <span class="method-start">26229 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">29026 ms</span>
+                <span class="method-start">26231 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.globant.web.tests.TestLogin</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">BeforeSuite(chrome, https://www.espn.com/?src=com)</span>
-                <span class="method-start">30234 ms</span>
+                <span class="method-name">BeforeTest(chrome, https://www.espn.com/?src=com)</span>
+                <span class="method-start">27412 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testLogin(prueba001o@test.com, prueba1234)</span>
-                <span class="method-start">43815 ms</span>
+                <span class="method-name">testLogin(prueba001r@test.com, prueba1234)</span>
+                <span class="method-start">40210 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">55735 ms</span>
+                <span class="method-start">48925 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">55736 ms</span>
+                <span class="method-start">48926 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.globant.web.tests.TestCancelCount</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">BeforeSuite(chrome, https://www.espn.com/?src=com)</span>
-                <span class="method-start">56742 ms</span>
+                <span class="method-name">BeforeTest(chrome, https://www.espn.com/?src=com)</span>
+                <span class="method-start">50323 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">testCancelCount(prueba001o@test.com, prueba1234)</span>
-                <span class="method-start">73356 ms</span>
+                <span class="method-name">testCancelCount(prueba001r@test.com, prueba1234)</span>
+                <span class="method-start">62550 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">122083 ms</span>
+                <span class="method-start">83809 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">122083 ms</span>
+                <span class="method-start">83810 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

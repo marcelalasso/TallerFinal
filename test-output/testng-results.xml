@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="My test suite" duration-ms="123875" started-at="2020-04-10T05:37:54Z" finished-at="2020-04-10T05:39:57Z">
+  <suite name="My test suite" duration-ms="84825" started-at="2020-04-10T06:16:15Z" finished-at="2020-04-10T06:17:40Z">
     <groups>
       <group name="GroupLogout">
         <method signature="TestLogin.testLogin(java.lang.String, java.lang.String)[pri:0, instance:com.globant.web.tests.TestLogin@1f28c152]" name="testLogin" class="com.globant.web.tests.TestLogin"/>
       </group> <!-- GroupLogout -->
     </groups>
-    <test name="Espn Test Create Count" duration-ms="30216" started-at="2020-04-10T05:37:54Z" finished-at="2020-04-10T05:38:24Z">
+    <test name="Espn Test Create Count" duration-ms="27396" started-at="2020-04-10T06:16:15Z" finished-at="2020-04-10T06:16:42Z">
       <class name="com.globant.web.tests.TestCreateCount">
-        <test-method status="PASS" signature="BeforeSuite(java.lang.String, java.lang.String)[pri:0, instance:com.globant.web.tests.TestCreateCount@66480dd7]" name="BeforeSuite" is-config="true" duration-ms="14428" started-at="2020-04-10T05:37:54Z" finished-at="2020-04-10T05:38:08Z">
+        <test-method status="PASS" signature="BeforeTest(java.lang.String, java.lang.String)[pri:0, instance:com.globant.web.tests.TestCreateCount@66480dd7]" name="BeforeTest" is-config="true" duration-ms="13844" started-at="2020-04-10T06:16:15Z" finished-at="2020-04-10T06:16:29Z">
           <params>
             <param index="0">
               <value>
@@ -25,8 +25,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BeforeSuite -->
-        <test-method status="PASS" signature="createCount(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.globant.web.tests.TestCreateCount@66480dd7]" name="createCount" duration-ms="14571" started-at="2020-04-10T05:38:08Z" description="Data Provider New Count" data-provider="newcount" finished-at="2020-04-10T05:38:23Z">
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="createCount(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.globant.web.tests.TestCreateCount@66480dd7]" name="createCount" duration-ms="12357" started-at="2020-04-10T06:16:29Z" description="Data Provider New Count" data-provider="newcount" finished-at="2020-04-10T06:16:41Z">
           <params>
             <param index="0">
               <value>
@@ -40,7 +40,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[mail264@prueba.com]]>
+                <![CDATA[mail424@prueba.com]]>
               </value>
             </param>
             <param index="3">
@@ -52,19 +52,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createCount -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.globant.web.tests.TestCreateCount@66480dd7]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-04-10T05:38:23Z" finished-at="2020-04-10T05:38:23Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.globant.web.tests.TestCreateCount@66480dd7]" name="afterClass" is-config="true" duration-ms="1" started-at="2020-04-10T06:16:41Z" finished-at="2020-04-10T06:16:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.globant.web.tests.TestCreateCount@66480dd7]" name="afterTest" is-config="true" duration-ms="1187" started-at="2020-04-10T05:38:23Z" finished-at="2020-04-10T05:38:24Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.globant.web.tests.TestCreateCount@66480dd7]" name="afterTest" is-config="true" duration-ms="1161" started-at="2020-04-10T06:16:41Z" finished-at="2020-04-10T06:16:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- com.globant.web.tests.TestCreateCount -->
     </test> <!-- Espn Test Create Count -->
-    <test name="Espn Test LogIn" duration-ms="26488" started-at="2020-04-10T05:38:24Z" finished-at="2020-04-10T05:38:50Z">
+    <test name="Espn Test LogIn" duration-ms="22899" started-at="2020-04-10T06:16:42Z" finished-at="2020-04-10T06:17:05Z">
       <class name="com.globant.web.tests.TestLogin">
-        <test-method status="PASS" signature="BeforeSuite(java.lang.String, java.lang.String)[pri:0, instance:com.globant.web.tests.TestLogin@1f28c152]" name="BeforeSuite" is-config="true" duration-ms="13580" started-at="2020-04-10T05:38:24Z" finished-at="2020-04-10T05:38:37Z">
+        <test-method status="PASS" signature="BeforeTest(java.lang.String, java.lang.String)[pri:0, instance:com.globant.web.tests.TestLogin@1f28c152]" name="BeforeTest" is-config="true" duration-ms="12798" started-at="2020-04-10T06:16:42Z" finished-at="2020-04-10T06:16:55Z">
           <params>
             <param index="0">
               <value>
@@ -79,12 +79,12 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BeforeSuite -->
-        <test-method status="FAIL" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:com.globant.web.tests.TestLogin@1f28c152]" name="testLogin" duration-ms="11916" started-at="2020-04-10T05:38:37Z" description="Data Provider Login" data-provider="count" finished-at="2020-04-10T05:38:49Z">
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:com.globant.web.tests.TestLogin@1f28c152]" name="testLogin" duration-ms="8713" started-at="2020-04-10T06:16:55Z" description="Data Provider Login" data-provider="count" finished-at="2020-04-10T06:17:04Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[prueba001o@test.com]]>
+                <![CDATA[prueba001r@test.com]]>
               </value>
             </param>
             <param index="1">
@@ -93,91 +93,22 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#global-header .small"}
-  (Session info: chrome=80.0.3987.163)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'CO-IT00385', ip: '192.168.0.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\EDITH~1.LAS\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:61402}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 8a2de9fcb83718c297d14edc25cc681d
-*** Element info: {Using=css selector, value=#global-header .small}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#global-header .small"}
-  (Session info: chrome=80.0.3987.163)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'CO-IT00385', ip: '192.168.0.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\EDITH~1.LAS\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:61402}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 8a2de9fcb83718c297d14edc25cc681d
-*** Element info: {Using=css selector, value=#global-header .small}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:416)
-at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
-at com.globant.web.pages.EspnHomePage.verLogout(EspnHomePage.java:205)
-at com.globant.web.tests.TestLogin.testLogin(TestLogin.java:19)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.globant.web.tests.TestLogin@1f28c152]" name="afterClass" is-config="true" duration-ms="1" started-at="2020-04-10T05:38:49Z" finished-at="2020-04-10T05:38:49Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.globant.web.tests.TestLogin@1f28c152]" name="afterClass" is-config="true" duration-ms="1" started-at="2020-04-10T06:17:04Z" finished-at="2020-04-10T06:17:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.globant.web.tests.TestLogin@1f28c152]" name="afterTest" is-config="true" duration-ms="985" started-at="2020-04-10T05:38:49Z" finished-at="2020-04-10T05:38:50Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.globant.web.tests.TestLogin@1f28c152]" name="afterTest" is-config="true" duration-ms="1385" started-at="2020-04-10T06:17:04Z" finished-at="2020-04-10T06:17:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- com.globant.web.tests.TestLogin -->
     </test> <!-- Espn Test LogIn -->
-    <test name="Espn Test Cancel Count" duration-ms="67130" started-at="2020-04-10T05:38:50Z" finished-at="2020-04-10T05:39:57Z">
+    <test name="Espn Test Cancel Count" duration-ms="34498" started-at="2020-04-10T06:17:05Z" finished-at="2020-04-10T06:17:40Z">
       <class name="com.globant.web.tests.TestCancelCount">
-        <test-method status="PASS" signature="BeforeSuite(java.lang.String, java.lang.String)[pri:0, instance:com.globant.web.tests.TestCancelCount@65e2dbf3]" name="BeforeSuite" is-config="true" duration-ms="16614" started-at="2020-04-10T05:38:50Z" finished-at="2020-04-10T05:39:07Z">
+        <test-method status="PASS" signature="BeforeTest(java.lang.String, java.lang.String)[pri:0, instance:com.globant.web.tests.TestCancelCount@65e2dbf3]" name="BeforeTest" is-config="true" duration-ms="12226" started-at="2020-04-10T06:17:05Z" finished-at="2020-04-10T06:17:18Z">
           <params>
             <param index="0">
               <value>
@@ -192,12 +123,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BeforeSuite -->
-        <test-method status="PASS" signature="testCancelCount(java.lang.String, java.lang.String)[pri:0, instance:com.globant.web.tests.TestCancelCount@65e2dbf3]" name="testCancelCount" duration-ms="48726" started-at="2020-04-10T05:39:07Z" description="Data Provider Login" data-provider="deletecount" finished-at="2020-04-10T05:39:56Z">
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="testCancelCount(java.lang.String, java.lang.String)[pri:0, instance:com.globant.web.tests.TestCancelCount@65e2dbf3]" name="testCancelCount" duration-ms="21258" started-at="2020-04-10T06:17:18Z" description="Data Provider Login" data-provider="deletecount" finished-at="2020-04-10T06:17:39Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[prueba001o@test.com]]>
+                <![CDATA[prueba001r@test.com]]>
               </value>
             </param>
             <param index="1">
@@ -209,11 +140,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCancelCount -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.globant.web.tests.TestCancelCount@65e2dbf3]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-04-10T05:39:56Z" finished-at="2020-04-10T05:39:56Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.globant.web.tests.TestCancelCount@65e2dbf3]" name="afterClass" is-config="true" duration-ms="1" started-at="2020-04-10T06:17:39Z" finished-at="2020-04-10T06:17:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.globant.web.tests.TestCancelCount@65e2dbf3]" name="afterTest" is-config="true" duration-ms="1789" started-at="2020-04-10T05:39:56Z" finished-at="2020-04-10T05:39:57Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.globant.web.tests.TestCancelCount@65e2dbf3]" name="afterTest" is-config="true" duration-ms="1011" started-at="2020-04-10T06:17:39Z" finished-at="2020-04-10T06:17:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
