@@ -11,12 +11,12 @@ public class TestCancelCount extends EspnTest {
 	/**
 	 * Test Cancel Count ESPN
 	 */	
-	  @Test(description = "Data Provider Login", dataProviderClass = Data.class, dataProvider = "count")
+	  @Test(description = "Data Provider Login", dataProviderClass = Data.class, dataProvider = "deletecount")
 	  public void testCancelCount(String uname, String pwd) {  	  
-		  System.out.print("CancelCount");
+		  log.info("Test CancelCount");
 		  EspnHomePage home=getEspnHome();
 		  home.cancelCount(uname, pwd);
-		  //Assert.assertNotEquals(home.verYouTube(),"0", "Correcto");
+		  Assert.assertEquals(home.verNoName(),0, "Correct");
 	  }
 	 
 }

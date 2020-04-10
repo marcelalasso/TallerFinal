@@ -2,18 +2,16 @@ package com.globant.web.pages;
 
 import java.time.Duration;
 import java.util.NoSuchElementException;
-import java.util.concurrent.TimeoutException;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.google.common.base.Function;
 
 /**
  * Parent of the other classes of pages.
@@ -70,6 +68,12 @@ public class BasePage {
 	
 	public static void waitElementClickable(WebElement element) {
 		getWait().until(ExpectedConditions.elementToBeClickable(element));
+		element.click();
+	}
+	
+	public void scrollPage(WebElement element) {
+	JavascriptExecutor js = (JavascriptExecutor) getDriver();
+	js.executeScript("arguments[0].scrollIntoView();", element);	
 	}
 	/**
 	 * Click in profile button and next button.

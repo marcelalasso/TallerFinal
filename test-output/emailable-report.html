@@ -9,10 +9,41 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">My test suite</th></tr>
-<tr><td><a href="#t0">Espn Test Cancel Count</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">23,595</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Espn Test Create Count</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">30,216</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Espn Test LogIn</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">26,488</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Espn Test Cancel Count</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">67,130</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num attn">1</th><th class="num">123,834</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">My test suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Espn Test Cancel Count &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.globant.web.tests.TestCancelCount</td><td><a href="#m0">testCancelCount</a></td><td rowspan="1">1586306145917</td><td rowspan="1">9156</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">My test suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Espn Test Create Count &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.globant.web.tests.TestCreateCount</td><td><a href="#m0">createCount</a></td><td rowspan="1">1586497088564</td><td rowspan="1">14571</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Espn Test LogIn &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.globant.web.tests.TestLogin</td><td><a href="#m1">testLogin</a></td><td rowspan="1">1586497117928</td><td rowspan="1">11916</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Espn Test Cancel Count &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.globant.web.tests.TestCancelCount</td><td><a href="#m2">testCancelCount</a></td><td rowspan="1">1586497147469</td><td rowspan="1">48726</td></tr></tbody>
 </table>
-<h2>Espn Test Cancel Count</h2><h3 id="m0">com.globant.web.tests.TestCancelCount#testCancelCount</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>email11@prueba.com</td><td>prueba1234</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Espn Test Create Count</h2><h3 id="m0">com.globant.web.tests.TestCreateCount#createCount</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>Ana</td><td>Ruiz</td><td>mail264@prueba.com</td><td>prueba1234</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Espn Test LogIn</h2><h3 id="m1">com.globant.web.tests.TestLogin#testLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>prueba001o@test.com</td><td>prueba1234</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#global-header .small&quot;}
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;CO-IT00385&apos;, ip: &apos;192.168.0.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\EDITH~1.LAS\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:61402}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8a2de9fcb83718c297d14edc25cc681d
+*** Element info: {Using=css selector, value=#global-header .small}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:416)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+	at com.globant.web.pages.EspnHomePage.verLogout(EspnHomePage.java:205)
+	at com.globant.web.tests.TestLogin.testLogin(TestLogin.java:19)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Espn Test Cancel Count</h2><h3 id="m2">com.globant.web.tests.TestCancelCount#testCancelCount</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>prueba001o@test.com</td><td>prueba1234</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

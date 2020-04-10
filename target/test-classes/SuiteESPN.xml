@@ -11,11 +11,13 @@
 			<class name="com.globant.web.tests.TestCreateCount"></class>
 		</classes>		
 	</test>
+
 	<test name="Espn Test LogIn"  >
 		<classes>
 			<class name="com.globant.web.tests.TestLogin"></class>
 		</classes>		
 	</test>
+	
 	<test name="Espn Test Cancel Count"  >
 		<classes>
 			<class name="com.globant.web.tests.TestCancelCount"></class>

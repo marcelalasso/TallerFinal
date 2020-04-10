@@ -1,7 +1,6 @@
 package com.globant.web.pages;
 
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -17,8 +16,10 @@ public class 	EspnHomePage extends BasePage{
 	@FindBy(css="#global-user-trigger")
 	private static WebElement user;
 		
-	@FindBy(css="#global-header ul.account-management a[tref$='login']")
-	private static WebElement logIn;
+	//@FindBy(css="#global-header a[tref$='login']")
+	
+	@FindBy(css="a[tref$='login']")
+	private static WebElement optlogin;
 	
 	@FindBy(css="a.btn")
 	private WebElement signUp;
@@ -38,7 +39,7 @@ public class 	EspnHomePage extends BasePage{
 	@FindBy(css="#did-ui-view  button[type='submit']")
 	private WebElement signUpForm;
 	
-	@FindBy(css="#global-header a[tref=\"/members/v3_1/modifyAccount\"]")
+	@FindBy(css="#global-header a[tref='/members/v3_1/modifyAccount']")
 	private WebElement espnProfile;
 	
 	@FindBy(css="#cancel-account")
@@ -47,7 +48,9 @@ public class 	EspnHomePage extends BasePage{
 	@FindBy(css=".btn-group button:nth-child(1)")
 	private WebElement confirmButton;
 		
-	@FindBy(css="li.user.hover:nth-child(2) li:nth-child(9)")
+	//@FindBy(css="li.user.hover:nth-child(2) li:nth-child(9)")
+	
+	@FindBy(css="#global-header .small")
 	private static WebElement logOut;
 	
 	@FindBy(css="#did-ui-view  input[type='email']")
@@ -56,11 +59,22 @@ public class 	EspnHomePage extends BasePage{
 	@FindBy(css="#did-ui-view button[type='submit']")
 	private WebElement buttonLogIn;	
 	
-	@FindBy(css="#global-viewport > .global-user")
-	private static WebElement container;	
+	@FindBy(id="google_ads_iframe_/21783347309/espn.com/frontpage/index_3")
+	private static WebElement banner;	
 	
 	@FindBy(id="disneyid-iframe")
 	private static WebElement iframes;
+	
+	@FindBy(css="#sideLogin-left-rail .button")
+	private static WebElement findButton;
+
+	@FindBy(css="#global-header li.display-user")
+	private static WebElement nameUser;
+	
+	@FindBy(css="div.global-user-container")
+	private static WebElement container;
+	
+	
 	
  	
 	/**
@@ -73,19 +87,17 @@ public class 	EspnHomePage extends BasePage{
 	}
 	
 
-	
 	/**
 	 * Create New Count
 	 */ 
 	public void createCount(String fname, String lname, String mail, String pwd) {
 		log.info("Choose iFrame");
-		profileClick(logIn);
+		profileClick(optlogin);
 		driver.switchTo().frame("disneyid-iframe");
-		waitElementClickable(signUp);
 		log.info("Select SingUp Button");
-		signUp.click();
+		waitElementClickable(signUp);
 		log.info("Insert Data");
-		waitElementClickable(firstName);
+		waitElementVisibility(firstName);
 		firstName.sendKeys(fname);
 		lastName.sendKeys(lname);
 		email.sendKeys(mail);
@@ -94,54 +106,62 @@ public class 	EspnHomePage extends BasePage{
 		signUpForm.click();
 		driver.switchTo().defaultContent();
 		getWait().until(ExpectedConditions.invisibilityOf(iframes));
-		profileClick(logOut);
 	}
 	
 	/**
 	 * Delete existent count 
 	 */
 	public void cancelCount(String uname, String pwd) {
-		profileClick(logIn);
+		driver.switchTo().defaultContent();
+		waitElementVisibility(user);
+		profileClick(optlogin);
 		log.info("Choose iFrame LogIn");
 		driver.switchTo().frame("disneyid-iframe");
 		logInClick(uname, pwd);
 		driver.switchTo().defaultContent();
-		log.info("Choose Cancel Count");
 		getWait().until(ExpectedConditions.invisibilityOf(iframes));
-		waitElementClickable(user);
+		scrollPage(findButton);
+		log.info("Choose Cancel Count");	
+		waitElementVisibility(user);
 		profileClick(espnProfile);
 		log.info("Go to Profile");
 		log.info("Delete count");
-		getWait().until(ExpectedConditions.visibilityOf(iframes));
+		waitElementVisibility(iframes);
 		driver.switchTo().frame("disneyid-iframe");
-		waitElementClickable(email);
+		waitElementVisibility(email);
+		waitSec(5000);
 		email.sendKeys("prueba123");
-		JavascriptExecutor js = (JavascriptExecutor) getDriver();
-		js.executeScript("arguments[0].scrollIntoView();", deleteButton);		
-		deleteButton.click();
-		confirmButton.click();
+		scrollPage(deleteButton);
+		waitElementClickable(deleteButton);
+		waitElementClickable(confirmButton);
 	}
 
 	/**
 	 * Login to existent count
 	 */
 	public void logIn(String uname, String pwd) {
-		profileClick(logIn);
+		profileClick(optlogin);
 		log.info("Choose iFrame LogIn");
 		driver.switchTo().frame("disneyid-iframe");
 		logInClick(uname, pwd);
 		driver.switchTo().defaultContent();
 		getWait().until(ExpectedConditions.invisibilityOf(iframes));
-		fwait(user);
-		profileClick(logOut);
+		waitElementVisibility(user);
 	}
 	
-	public static void profileClick(WebElement option) {
+	
+	/**
+	 * Click on Profile and next WebElement 
+	 */
+	public void profileClick(WebElement options) {
+		driver.manage().deleteAllCookies();
+		scrollPage(findButton);
+		waitElementVisibility(user);
 		waitElementVisibility(user);
 		waitElementClickable(user);
-		user.click();
-		waitElementClickable(option);
-	 	option.click();
+		waitElementVisibility(container);
+		waitElementVisibility(options);
+		waitElementClickable(options);
 	}
 	
 	/**
@@ -149,27 +169,67 @@ public class 	EspnHomePage extends BasePage{
 	 * @param element : user name and password
 	 */
 	public void logInClick(String uname, String pwd) {
-		getWait().until(ExpectedConditions.visibilityOf(email));
+		waitElementVisibility(email);
 		email.sendKeys(uname);
 		password.sendKeys(pwd);	
-		getWait().until(ExpectedConditions.visibilityOf(buttonLogIn));
+		waitElementVisibility(buttonLogIn);
 		waitElementClickable(buttonLogIn);
-		buttonLogIn.click();
 	}	
 
+	/**
+	 * LogOut Page
+	 */
+	public static void logOut() {
+		log.info("LogOut");
+		waitElementClickable(user);
+		String name=nameUser.getText();
+		if ((name.compareToIgnoreCase("welcome!"))!=0) {
+			waitElementVisibility(container);
+			waitElementVisibility(logOut);
+			waitElementClickable(logOut);
+		}
+		else
+		{
+			log.info("Final CancelCount");
+			waitElementClickable(user);
+		}
+	}	
+
+	/**
+	 * Verify LogOut option Exist 
+	 */
+	public static boolean verLogout() {
+		log.info("Verify button LogOut Exist");
+		user.click();
+		log.info("Verify LogOut");
+		return logOut.isDisplayed();
+	}	
 	
+	/**
+	 * Verify Only Welcome in profile
+	 */
+		public int verNoName() {
+		log.info("Verify Name no Exist");
+		waitElementVisibility(user);
+		waitElementVisibility(user);
+		waitElementClickable(user);
+		waitElementVisibility(container);
+		String name=nameUser.getText();
+		return name.compareToIgnoreCase("welcome!");
+	}
 
-	
-	//Verificar que aparece barra cuando se inicia video YouTube
-	//public String verYouTube() {
-		//log.info("Verify one element in YouTube Video");
-		//return youTubeBar.getAttribute("aria-valuenow").toString();
-	//}
-
-	//Verificar que aparece barra cuando se inicia video Vimeo
-	//public String verVimeo() {
-	//	log.info("Verify one element in Vimeo Video");
-	//	return vimeoBar.getAttribute("aria-valuenow").toString();
-	//}
-
+	/**
+	 * Verify name in profile 
+	*/
+	public String verName() {
+		log.info("Verify name");
+		scrollPage(findButton);
+		waitElementVisibility(user);
+		waitElementVisibility(user);
+		waitElementClickable(user);
+		waitElementVisibility(container);
+		String name=nameUser.getText();
+		log.info("User Name= " + name);
+		return name;
+	}
 }

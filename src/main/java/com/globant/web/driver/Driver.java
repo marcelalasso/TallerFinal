@@ -38,10 +38,11 @@ public class Driver {
 				}
 				break;
 			case "firefox":
+				System.setProperty("webdriver.gecko.driver", "./src/main/resources/geckodriver.exe");
 				driver = new FirefoxDriver();
 				break;
 			case "chrome":
-				System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver80.exe");
 				driver = new ChromeDriver();
 				break;
 			default:
