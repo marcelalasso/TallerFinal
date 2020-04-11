@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="My test suite" duration-ms="90915" started-at="2020-04-11T06:04:29Z" finished-at="2020-04-11T06:06:00Z">
+    <groups>
+    </groups>
+    <test name="Espn Test Create Count" duration-ms="29863" started-at="2020-04-11T06:04:29Z" finished-at="2020-04-11T06:04:59Z">
+      <class name="com.globant.web.tests.TestCreateCount">
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String)[pri:0, instance:com.globant.web.tests.TestCreateCount@66480dd7]" name="beforeTest" is-config="true" duration-ms="17866" started-at="2020-04-11T06:04:29Z" finished-at="2020-04-11T06:04:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.espn.com/?src=com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="createCount(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.globant.web.tests.TestCreateCount@66480dd7]" name="createCount" duration-ms="10496" started-at="2020-04-11T06:04:47Z" description="Data Provider New Count" data-provider="newaccount" finished-at="2020-04-11T06:04:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ana]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ruiz]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mail51@prueba.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[prueba1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCount -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.globant.web.tests.TestCreateCount@66480dd7]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-04-11T06:04:57Z" finished-at="2020-04-11T06:04:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.globant.web.tests.TestCreateCount@66480dd7]" name="afterTest" is-config="true" duration-ms="1474" started-at="2020-04-11T06:04:57Z" finished-at="2020-04-11T06:04:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.globant.web.tests.TestCreateCount -->
+    </test> <!-- Espn Test Create Count -->
+    <test name="Espn Test LogIn" duration-ms="24858" started-at="2020-04-11T06:04:59Z" finished-at="2020-04-11T06:05:23Z">
+      <class name="com.globant.web.tests.TestLogin">
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String)[pri:0, instance:com.globant.web.tests.TestLogin@1f28c152]" name="beforeTest" is-config="true" duration-ms="12950" started-at="2020-04-11T06:04:59Z" finished-at="2020-04-11T06:05:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.espn.com/?src=com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:com.globant.web.tests.TestLogin@1f28c152]" name="testLogin" duration-ms="10678" started-at="2020-04-11T06:05:12Z" description="Login using parameteres" finished-at="2020-04-11T06:05:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[prueba002p@test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[prueba1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.globant.web.tests.TestLogin@1f28c152]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-04-11T06:05:22Z" finished-at="2020-04-11T06:05:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.globant.web.tests.TestLogin@1f28c152]" name="afterTest" is-config="true" duration-ms="1227" started-at="2020-04-11T06:05:22Z" finished-at="2020-04-11T06:05:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.globant.web.tests.TestLogin -->
+    </test> <!-- Espn Test LogIn -->
+    <test name="Espn Test Cancel Count" duration-ms="36178" started-at="2020-04-11T06:05:23Z" finished-at="2020-04-11T06:06:00Z">
+      <class name="com.globant.web.tests.TestCancelCount">
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String)[pri:0, instance:com.globant.web.tests.TestCancelCount@65e2dbf3]" name="beforeTest" is-config="true" duration-ms="13063" started-at="2020-04-11T06:05:23Z" finished-at="2020-04-11T06:05:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.espn.com/?src=com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testCancelCount(java.lang.String, java.lang.String)[pri:0, instance:com.globant.web.tests.TestCancelCount@65e2dbf3]" name="testCancelCount" duration-ms="22278" started-at="2020-04-11T06:05:37Z" description="Data Provider Login" data-provider="deleteaccount" finished-at="2020-04-11T06:05:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[prueba002p@test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[prueba1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCancelCount -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.globant.web.tests.TestCancelCount@65e2dbf3]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-04-11T06:05:59Z" finished-at="2020-04-11T06:05:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.globant.web.tests.TestCancelCount@65e2dbf3]" name="afterTest" is-config="true" duration-ms="835" started-at="2020-04-11T06:05:59Z" finished-at="2020-04-11T06:06:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.globant.web.tests.TestCancelCount -->
+    </test> <!-- Espn Test Cancel Count -->
+  </suite> <!-- My test suite -->
+</testng-results>
